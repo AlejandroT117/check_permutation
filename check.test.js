@@ -4,11 +4,26 @@ const test_list = [
     {
         description: 'Checking case and case',
         test: ['case', 'case'],
-        expected: false
+        expected: true
     },
     {
         description: 'Checking case and seca',
         test: ['case', 'seca'],
+        expected: true
+    },
+    {
+        description: 'Checking Alejandro and jaAndrole',
+        test: ['Alejandro', 'jaAndrole'],
+        expected: true
+    },
+    {
+        description: 'Checking taza and caza',
+        test: ['taza', 'caza'],
+        expected: false
+    },
+    {
+        description: 'Checking pez and pesa',
+        test: ['pez', 'pesa'],
         expected: false
     }
 ]
