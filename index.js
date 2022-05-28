@@ -2,14 +2,10 @@ const check_permutation = (strOne, strTwo) => {
   if (strOne.length != strTwo.length) {
     return false;
   }
-  const strOneArray = Array.from(strOne).sort();
-  const strTwoArray = Array.from(strTwo).sort();
+  const orderedStrOne = Array.from(strOne).sort().join("");
+  const orderedStrTwo = Array.from(strTwo).sort().join("");
 
-  strOne = strOneArray.join("");
-  strTwo = strTwoArray.join("");
-
-  return strOne === strTwo;
+  return orderedStrOne === orderedStrTwo;
 };
-
 
 module.exports = check_permutation;
